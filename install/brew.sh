@@ -1,0 +1,33 @@
+#!/usr/bin/env bash
+
+# Install command-line tools using Homebrew.
+
+# Ask for the administrator password upfront.
+sudo -v
+
+# Keep-alive: update existing `sudo` time stamp until the script has finished.
+while true; do sudo -n true; sleep 60; kill -0 "$$" || exit; done 2>/dev/null &
+
+# Make sure we’re using the latest Homebrew.
+brew update
+
+# Upgrade any already-installed formulae.
+brew upgrade --all
+
+apps=(
+    caskroom/cask/brew-cask
+    ansible
+    coreutils
+    dockutil
+    fasd
+    git
+    maven
+    psgrep
+    ssh-copy-id
+    tree
+)
+
+brew install "${apps[@]}"
+
+# Git comes with diff-highlight, but isn't in the PATH
+ln -sf "$(brew --prefix)/share/git-core/contrib/diff-highlight/diff-highlight" /usr/local/bin/diff-highlight
