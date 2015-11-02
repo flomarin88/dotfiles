@@ -1,0 +1,3 @@
+alias sshint2="ssh root@172.17.11.145"
+alias sshint3="ssh root@172.17.11.143"
+alias sshext="ssh root@172.17.15.107"
