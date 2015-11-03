@@ -49,13 +49,14 @@ ZSH_THEME="robbyrussell"
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
-plugins=(git brew brew-cask common-aliases cp github heroku mvn osx sublime sudo tmux vagrant)
+plugins=(git brew brew-cask cp github heroku mvn osx sublime sudo tmux vagrant)
 
 # User configuration
 
 export PATH="/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin"
 # export MANPATH="/usr/local/man:$MANPATH"
 
+export ZSH_TMUX_AUTOSTART=true
 source $ZSH/oh-my-zsh.sh
 
 # You may need to manually set your language environment
@@ -82,4 +83,7 @@ export LANG=en_US.UTF-8
 # Example aliases
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
+
+eval "$(rbenv init -)"
+source ~/.exports
 source ~/.aliases

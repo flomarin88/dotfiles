@@ -23,6 +23,8 @@ apps=(
     git
     maven
     psgrep
+    rbenv
+    ruby-build
     ssh-copy-id
     tree
 )
