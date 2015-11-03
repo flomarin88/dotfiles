@@ -6,9 +6,9 @@ apps=(
     dashlane
     flux
     intellij-idea
+    iterm2
     java
     google-chrome
-    kaleidoscope
     slack
     sourcetree
     spotify
