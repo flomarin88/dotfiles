@@ -26,3 +26,5 @@ export HOMEBREW_CASK_OPTS="--appdir=/Applications"
 
 export PATH="/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin"
 # export MANPATH="/usr/local/man:$MANPATH"
+
+export RBENV_VERSION="2.2.3"

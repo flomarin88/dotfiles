@@ -49,7 +49,7 @@ ZSH_THEME="robbyrussell"
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
-plugins=(git brew brew-cask cp github heroku mvn osx sublime sudo tmux vagrant)
+plugins=(git brew brew-cask cp github heroku mvn osx sublime sudo tmux tmuxinator vagrant)
 
 # User configuration
 
@@ -84,6 +84,6 @@ export LANG=en_US.UTF-8
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 
-eval "$(rbenv init -)"
 source ~/.exports
 source ~/.aliases
+eval "$(rbenv init -)"
