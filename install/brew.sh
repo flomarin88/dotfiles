@@ -19,6 +19,9 @@ apps=(
     ansible
     coreutils
     dockutil
+    docker-machine
+    docker
+    docker-compose
     fasd
     git
     maven
