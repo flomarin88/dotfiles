@@ -1,5 +1,5 @@
 # Path to your oh-my-zsh installation.
-export ZSH=/Users/fma/.oh-my-zsh
+export ZSH=/Users/OCTO-FMA/.oh-my-zsh
 
 # Set name of the theme to load.
 # Look in ~/.oh-my-zsh/themes/
@@ -86,4 +86,5 @@ export LANG=en_US.UTF-8
 
 source ~/.exports
 source ~/.aliases
-eval "$(rbenv init -)"
+export RBENV_ROOT=/usr/local/var/rbenv
+if which rbenv > /dev/null; then eval "$(rbenv init -)"; fi
