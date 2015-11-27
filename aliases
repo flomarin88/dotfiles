@@ -1,3 +1,2 @@
-alias sshint2="ssh root@172.17.11.145"
-alias sshint3="ssh root@172.17.11.143"
-alias sshext="ssh root@172.17.15.107"
+alias gfix="git commit --fixup HEAD"
+alias greb="git rebase --autosquash -i"
