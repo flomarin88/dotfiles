@@ -1,2 +1,2 @@
-alias gfix="git commit --fixup HEAD"
+alias gfix="git commit --fixup"
 alias greb="git rebase --autosquash -i"
