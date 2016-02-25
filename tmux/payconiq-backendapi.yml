@@ -4,12 +4,17 @@ name: payconiq-backendapi
 root: ~/dev/PAYCONIQ/backendapi
 
 windows:
-  - editor:
-      layout: 9544,181x45,0,0[181x12,0,0,18,181x32,0,13,20]
+  - git:
+      layout: 9a66,204x51,0,0[204x15,0,0{102x15,0,0,10,101x15,103,0,22},204x35,0,16,13]
       panes:
         - while true; do clear; glog -10 | cat; sleep 5; done
+        - while true; do clear; git status -s; sleep 5; done
         - 
-  - logs:
-      - cd ../payconiq-deployer
+  - deploy:
+      - cd ../deployer
+      - 
+  - vagrant:
+      - cd ../deployer
+      - vagrant up
       - vagrant ssh
-      - tail -f /var/log/tomcat/log/app/payconiq/main.log
+      - 

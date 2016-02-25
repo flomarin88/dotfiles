@@ -26,3 +26,4 @@ export HOMEBREW_CASK_OPTS="--appdir=/Applications"
 
 export PATH="/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin"
 # export MANPATH="/usr/local/man:$MANPATH"
+export FONTCONFIG_PATH=/opt/X11/lib/X11/fontconfig

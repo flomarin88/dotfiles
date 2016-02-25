@@ -1,7 +1,7 @@
-# ~/.tmuxinator/payconiq-deployer.yml
+# ~/.tmuxinator/payconiq-features.yml
 
-name: payconiq-deployer
-root: ~/dev/PAYCONIQ/deployer
+name: payconiq-features
+root: ~/dev/PAYCONIQ/features
 
 windows:
   - git:
@@ -10,6 +10,3 @@ windows:
         - while true; do clear; glog -10 | cat; sleep 5; done
         - while true; do clear; git status -s; sleep 5; done
         - 
-  - vagrant:
-  - jenkins:
-      ssh jenkins
