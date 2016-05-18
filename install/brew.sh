@@ -23,6 +23,7 @@ apps=(
     docker
     docker-compose
     fasd
+    jenv
     git
     maven
     psgrep

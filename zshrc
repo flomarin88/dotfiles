@@ -49,7 +49,7 @@ ZSH_THEME="robbyrussell"
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
-plugins=(git brew brew-cask cp docker docker-compose docker-machine github heroku mvn osx sublime sudo tmux tmuxinator vagrant)
+plugins=(git brew brew-cask colorize cp docker docker-compose docker-machine github gradle heroku mosh mvn osx sublime sudo tmux tmuxinator vagrant)
 
 # User configuration
 
@@ -85,6 +85,14 @@ export LANG=en_US.UTF-8
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 
 source ~/.exports
+source ~/.eismo
 source ~/.aliases
 export RBENV_ROOT=/usr/local/var/rbenv
 if which rbenv > /dev/null; then eval "$(rbenv init -)"; fi
+
+eval "$(jenv init -)"
+
+meteo(){
+  VILLE=${1:-paris}
+  curl -4 http://wttr.in/$VILLE
+}

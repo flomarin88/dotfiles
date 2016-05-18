@@ -1,2 +1,4 @@
 alias gfix="git commit --fixup"
 alias greb="git rebase --autosquash -i"
+alias gcbi="gradle clean build install"
+alias grun="gradle bootRun"

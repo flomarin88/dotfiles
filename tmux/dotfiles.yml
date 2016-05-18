@@ -7,5 +7,5 @@ windows:
   - editor:
       layout: 5543,181x45,0,0[181x12,0,0,14,181x32,0,13,16]
       panes:
-        - while true; do clear; glog -10 | cat; sleep 5; done
+        - while true; do clear; git --no-pager log -n 10 --oneline --decorate --graph; sleep 5; done
         - 

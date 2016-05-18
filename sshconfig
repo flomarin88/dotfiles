@@ -1,0 +1,562 @@
+IdentityFile ~/.ssh/id_rsa_octo
+IdentityFile ~/.ssh/id_rsa_github 
+
+Host github
+    HostName github.com
+    IdentityFile ~/.ssh/id_rsa_github
+    IdentitiesOnly yes
+    User git
+
+Host *
+  ForwardAgent yes
+
+ControlMaster auto
+
+##############################################
+# EISMO DEV
+Host EISMO-DEV-UDD UDD
+  Hostname 172.25.193.85
+  User eismo
+
+Host EISMO-DEV-UDD2
+  Hostname 172.25.193.87
+  User root
+
+Host EISMO-DEV-BDD
+  Hostname 172.25.193.86
+  User root
+
+Host EISMO-DEV-EXP
+  Hostname 172.25.193.83
+  User root
+
+Host EISMO-DEV-FRONT
+  Hostname 172.25.193.82
+  User root
+
+Host EISMO-DEV-IMP
+  Hostname 172.25.193.84
+  User root
+
+Host OTT-DEV-FRONT
+  Hostname 172.25.193.88
+  User root
+
+Host OTT-DEV-FRONT-NEW
+  Hostname 172.25.193.89
+  User root
+
+Host EISMO-DEV-API
+  Hostname 172.25.193.90
+  User eismo
+
+##############################################
+# EISMO PREPROD
+
+# BOUTIQUE
+Host OTT-PP-BOUTIQUE
+  Hostname 172.25.193.109
+  User root
+
+# MEA
+Host OTT-PP-MEA
+  Hostname 172.25.193.110
+  User root
+
+# MEA IHM
+Host OTT-PP-BACKOFF
+  Hostname 172.25.193.106
+  User root
+
+# OTT-FRONT
+Host OTT-PP-FRONT01
+  Hostname 172.25.193.107
+  User root
+
+Host OTT-PP-BDD
+  Hostname 172.25.193.108
+  User root
+
+# EISMO EXPORTER EPG
+Host EISMO-PP-EXPEPG
+  Hostname 172.25.193.68
+  User root
+
+# EISMO IMPORTER
+Host EISMO-PP-IMP
+  Hostname 172.25.193.69
+  User root
+
+# EISMO DATABASE
+Host EISMO-PP-BDD
+  Hostname 172.25.193.70
+  User root
+
+# EISMO FRONT
+Host EISMO-PP-FRONT01
+  Hostname 172.25.193.71
+  User root
+
+# EISMO EXPORTS CIBE AJIMI
+Host EISMO-PP-EXPCIBE
+  Hostname 172.25.193.72
+  User root
+
+# EISMO EXPORT EIT
+Host EISMO-PP-EXPEIT
+  Hostname 172.25.193.67
+  User root
+
+# EISMO IMPORT BDDP-COS
+Host EISMO-PP-BDDP-COS
+  Hostname 172.25.193.73
+  User root
+
+# EISMO API
+Host EISMO-PP-API
+  Hostname 172.25.193.77
+  User root
+
+Host EISMO-PP-IMG
+  Hostname 172.25.193.66
+  User root
+
+Host EISMO-PP-BKPCNF
+  Hostname 172.25.193.74
+  User root
+
+##############################################
+# EISMO PROD
+
+# BOUTIQUE
+Host OTT-SRV-BOUTIQUE
+  Hostname 172.25.193.13
+  User root
+
+# MEA
+Host OTT-SRV-MEA
+  Hostname 172.25.193.14
+  User root
+
+# MEA IHM
+Host OTT-SRV-BACKOFF
+  Hostname 172.25.193.15
+  User root
+
+# OTT FRONT
+Host OTT-SRV-FRONT01
+  Hostname 172.25.193.10
+  User root
+
+Host OTT-SRV-FRONT02
+  Hostname 172.25.193.11
+  User root
+
+Host OTT-SRV-FRONT03
+  Hostname 172.25.193.16
+  User root
+
+# OTT BDD
+Host OTT-SRV-BDD01
+  Hostname 172.25.193.12
+  User root
+
+# EISMO EXPORTER EPG
+Host EISMO-SRV-EXPEPG
+  Hostname 172.25.193.43
+  User root
+
+# EISMO IMPORTER
+Host EISMO-SRV-IMP
+  Hostname 172.25.193.37
+  User root
+
+# EISMO DATABASE
+Host EISMO-SRV-BDD01
+  Hostname 172.25.193.39
+  User root
+
+Host EISMO-SRV-BDD02
+  Hostname 172.25.193.41
+  User root
+
+# EISMO FRONT
+Host EISMO-SRV-FRONT01
+  Hostname 172.25.193.34
+  User root
+
+Host EISMO-SRV-FRONT02
+  Hostname 172.25.193.35
+  User root
+
+# EISMO EXPORTS CIBE AJIMI
+Host EISMO-SRV-EXPCIBE
+  Hostname 172.25.193.44
+  User root
+
+# EISMO EXPORT EIT
+Host EISMO-SRV-EXPEIT1
+  Hostname 172.25.193.36
+  User root
+
+Host EISMO-SRV-EXPEIT2
+  Hostname 172.25.193.40
+  User root
+
+# EISMO IMPORT BDDP-COS
+Host EISMO-SRV-BDDP-COS
+  Hostname 172.25.193.45
+  User root
+
+# EISMO API
+Host EISMO-SRV-API01
+  Hostname 172.25.193.51
+  User root
+
+Host EISMO-SRV-WEBEPG
+  Hostname 172.25.193.38
+  User root
+
+Host EISMO-SRV-IMG
+  Hostname 172.25.193.52
+  User root
+
+Host EISMO-SRV-BKPCNF
+  Hostname 172.25.193.46
+  User root
+
+#### PERF ####
+Host EISMO-PERF-FRONT
+  Hostname 172.25.194.2
+  User eismo
+
+Host EISMO-PERF-OTT-FRONT
+  Hostname 172.25.194.14
+  User eismo
+
+Host EISMO-PERF-OTT-BDD-NEW
+  Hostname 172.25.194.15
+  User eismo
+
+Host EISMO-PERF-OTT-BDD
+  Hostname 172.25.194.11
+  User eismo
+
+Host EISMO-PERF-MEA-BACKOFF
+  Hostname 172.25.194.13
+  User eismo
+
+Host EISMO-PERF-MEA
+  Hostname 172.25.194.12
+  User eismo
+
+Host EISMO-PERF-IMP
+  Hostname 172.25.194.6
+  User eismo
+
+### OLD NAMES
+##############################################
+# EISMO DEV
+Host COS-EISMO-DEV-UDD
+  Hostname 172.25.193.85
+  User eismo
+
+Host COS-EISMO-DEV-UDD2
+  Hostname 172.25.193.87
+  User root
+
+Host COS-EISMO-DEV-BDD
+  Hostname 172.25.193.86
+  User root
+
+Host COS-EISMO-DEV-EXP
+  Hostname 172.25.193.83
+  User root
+
+Host COS-EISMO-DEV-FRONT
+  Hostname 172.25.193.82
+  User root
+
+Host COS-EISMO-DEV-IMP
+  Hostname 172.25.193.84
+  User root
+
+Host COS-OTT-DEV-FRONT
+  Hostname 172.25.193.88
+  User root
+
+Host COS-OTT-DEV-FRONT-NEW
+  Hostname 172.25.193.89
+  User root
+
+Host COS-EISMO-DEV-API
+  Hostname 172.25.193.86
+  User root
+
+##############################################
+# EISMO PREPROD
+
+# BOUTIQUE
+Host COS-OTT-PP-BOUTIQUE
+  Hostname 172.25.193.109
+  User root
+
+# MEA
+Host COS-OTT-PP-MEA
+  Hostname 172.25.193.110
+  User root
+
+# MEA IHM
+Host COS-OTT-PP-BACKOFF
+  Hostname 172.25.193.106
+  User root
+
+# COS-OTT-FRONT
+Host COS-OTT-PP-FRONT01
+  Hostname 172.25.193.107
+  User root
+
+Host COS-OTT-PP-BDD
+  Hostname 172.25.193.108
+  User root
+
+# EISMO EXPORTER EPG
+Host COS-EISMO-PP-EXPEPG
+  Hostname 172.25.193.68
+  User root
+
+# EISMO IMPORTER
+Host COS-EISMO-PP-IMP
+  Hostname 172.25.193.69
+  User root
+
+# EISMO DATABASE
+Host COS-EISMO-PP-BDD
+  Hostname 172.25.193.70
+  User root
+
+# EISMO FRONT
+Host COS-EISMO-PP-FRONT01
+  Hostname 172.25.193.71
+  User root
+
+# EISMO EXPORTS CIBE AJIMI
+Host COS-EISMO-PP-EXPCIBE
+  Hostname 172.25.193.72
+  User root
+
+# EISMO EXPORT EIT
+Host COS-EISMO-PP-EXPEIT
+  Hostname 172.25.193.67
+  User root
+
+# EISMO IMPORT BDDP-COS
+Host COS-EISMO-PP-BDDP-COS
+  Hostname 172.25.193.73
+  User root
+
+# EISMO API
+Host COS-EISMO-PP-API
+  Hostname 172.25.193.77
+  User root
+
+Host COS-EISMO-PP-IMAGE-API
+  Hostname 172.25.193.66
+  User root
+
+Host COS-EISMO-PP-BKPCNF
+  Hostname 172.25.193.74
+  User root
+
+Host EISMO2-PP-FRONT
+    Hostname 172.25.194.34
+    User eismo
+    
+Host EISMO2-PP-EXPEIT
+    Hostname 172.25.194.35
+    User eismo
+    
+Host EISMO2-PP-EXPEPG
+    Hostname 172.25.194.36
+    User eismo
+    
+Host EISMO2-PP-CIBE
+    Hostname 172.25.194.37
+    User eismo
+    
+Host EISMO2-PP-EXPEPG
+    Hostname 172.25.194.36
+    User eismo
+    
+Host EISMO2-PP-CIBE
+    Hostname 172.25.194.37
+    User eismo
+    
+Host EISMO2-PP-IMP
+    Hostname 172.25.194.38
+    User eismo
+    
+Host EISMO2-PP-API
+    Hostname 172.25.194.39
+    User eismo
+    
+Host EISMO2-PP-BDDP-COS
+    Hostname 172.25.194.40
+    User eismo
+    
+Host EISMO2-PP-IMAGE
+    Hostname 172.25.194.41
+    User eismo
+    
+Host EISMO2-PP-BDD
+    Hostname 172.25.194.42
+    User eismo
+    
+Host EISMO2-PP-OTT-BDD
+    Hostname 172.25.194.43
+    User eismo
+    
+Host EISMO2-PP-MEA
+    Hostname 172.25.194.44
+    User eismo
+    
+Host EISMO2-PP-MEA-BACKOFF
+    Hostname 172.25.194.45
+    User eismo
+    
+Host EISMO2-PP-OTT-FRONT
+    Hostname 172.25.194.46
+    User eismo
+    
+Host EISMO2-PP-OTT-BDD-NEW
+    Hostname 172.25.194.47
+    User eismo
+    
+Host EISMO2-PP-EVENT
+    Hostname 172.25.194.48
+    User eismo
+    
+Host EISMO2-PP-API-W
+    Hostname 172.25.194.49
+    User eismo
+    
+Host EISMO2-PP-API-R
+    Hostname 172.25.194.50
+    User eismo
+    
+Host EISMO2-PP-API-BDD
+    Hostname 172.25.194.51
+    User eismo
+    
+Host EISMO2-PP-EVT-RAW
+    Hostname 172.25.194.52
+    User eismo
+    
+Host EISMO2-PP-EVT-WORK
+    Hostname 172.25.194.53
+    User eismo
+    
+Host EISMO2-PP-GLFS
+    Hostname 172.25.194.54
+    User eismo
+    
+
+##############################################
+# EISMO PROD
+
+# BOUTIQUE
+Host COS-OTT-SRV-BOUTIQUE
+  Hostname 172.25.193.13
+  User root
+
+# MEA
+Host COS-OTT-SRV-MEA
+  Hostname 172.25.193.14
+  User root
+
+# MEA IHM
+Host COS-OTT-SRV-BACKOFF
+  Hostname 172.25.193.15
+  User root
+
+# OTT FRONT
+Host COS-OTT-SRV-FRONT01
+  Hostname 172.25.193.10
+  User root
+
+Host COS-OTT-SRV-FRONT02
+  Hostname 172.25.193.11
+  User root
+
+Host COS-OTT-SRV-FRONT03
+  Hostname 172.25.193.16
+  User root
+
+# OTT BDD
+Host COS-OTT-SRV-BDD01
+  Hostname 172.25.193.12
+  User root
+
+# EISMO EXPORTER EPG
+Host COS-EISMO-SRV-EXPEPG
+  Hostname 172.25.193.43
+  User root
+
+# EISMO IMPORTER
+Host COS-EISMO-SRV-IMP
+  Hostname 172.25.193.37
+  User root
+
+# EISMO DATABASE
+Host COS-EISMO-SRV-BDD01
+  Hostname 172.25.193.39
+  User root
+
+Host COS-EISMO-SRV-BDD02
+  Hostname 172.25.193.41
+  User root
+
+# EISMO FRONT
+Host COS-EISMO-SRV-FRONT01
+  Hostname 172.25.193.34
+  User root
+
+Host COS-EISMO-SRV-FRONT02
+  Hostname 172.25.193.35
+  User root
+
+# EISMO EXPORTS CIBE AJIMI
+Host COS-EISMO-SRV-EXPCIBE
+  Hostname 172.25.193.44
+  User root
+
+# EISMO EXPORT EIT
+Host COS-EISMO-SRV-EXPEIT1
+  Hostname 172.25.193.36
+  User root
+
+Host COS-EISMO-SRV-EXPEIT2
+  Hostname 172.25.193.40
+  User root
+
+# EISMO IMPORT BDDP-COS
+Host COS-EISMO-SRV-BDDP-COS
+  Hostname 172.25.193.45
+  User root
+
+# EISMO API
+Host COS-EISMO-SRV-API01
+  Hostname 172.25.193.51
+  User root
+
+Host COS-EISMO-SRV-WEBEPG
+  Hostname 172.25.193.38
+  User root
+
+Host COS-EISMO-SRV-IMAGE-API
+  Hostname 172.25.193.52
+  User root
+
+Host COS-EISMO-SRV-BKPCNF
+  Hostname 172.25.193.46
+  User root
