@@ -1,4 +1,6 @@
 alias gfix="git commit --fixup"
 alias greb="git rebase --autosquash -i"
+alias gdb="git branch -vv | grep ': gone]' | awk '{print $1}' | xargs git branch -D"
 alias gcbi="gradle clean build install"
 alias grun="gradle bootRun"
+alias speed="curl -o /dev/null http://speedtest.sea01.softlayer.com/downloads/test100.zip"
