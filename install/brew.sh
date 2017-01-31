@@ -12,10 +12,9 @@ while true; do sudo -n true; sleep 60; kill -0 "$$" || exit; done 2>/dev/null &
 brew update
 
 # Upgrade any already-installed formulae.
-brew upgrade --all
+brew upgrade
 
 apps=(
-    caskroom/cask/brew-cask
     ansible
     coreutils
     dockutil
@@ -25,11 +24,14 @@ apps=(
     fasd
     jenv
     git
+    Caskroom/cask/java
     maven
     psgrep
     rbenv
     ruby-build
     ssh-copy-id
+    tmux
+    reattach-to-user-namespace
     tree
 )
 
@@ -37,3 +39,5 @@ brew install "${apps[@]}"
 
 # Git comes with diff-highlight, but isn't in the PATH
 ln -sf "$(brew --prefix)/share/git-core/contrib/diff-highlight/diff-highlight" /usr/local/bin/diff-highlight
+
+gem install tmuxinator

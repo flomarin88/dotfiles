@@ -8,6 +8,6 @@ sudo xcodebuild -license
 
 ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
 brew tap caskroom/cask
-brew install brew-cask
+brew install brew-cask-completion
 brew tap homebrew/versions
 brew tap caskroom/versions

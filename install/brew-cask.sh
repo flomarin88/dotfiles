@@ -1,18 +1,14 @@
 apps=(
     alfred
-    bettertouchtool
-    caffeine
-    dash
     dashlane
     flux
     intellij-idea
     iterm2
-    java
     google-chrome
     slack
     sourcetree
     spotify
-    sublime-text3
+    sublime-text
     tunnelblick
     virtualbox
     vagrant

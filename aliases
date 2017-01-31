@@ -1,3 +1,4 @@
+alias mux="tmuxinator"
 alias gfix="git commit --fixup"
 alias greb="git rebase --autosquash -i"
 alias gdb="git branch -vv | grep ': gone]' | awk '{print $1}' | xargs git branch -D"

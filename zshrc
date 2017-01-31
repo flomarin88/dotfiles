@@ -1,5 +1,5 @@
 # Path to your oh-my-zsh installation.
-export ZSH=/Users/OCTO-FMA/.oh-my-zsh
+export ZSH=/Users/florianmarin/.oh-my-zsh
 
 # Set name of the theme to load.
 # Look in ~/.oh-my-zsh/themes/
@@ -49,7 +49,7 @@ ZSH_THEME="robbyrussell"
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
-plugins=(aws git brew brew-cask colorize cp docker docker-compose docker-machine github gradle heroku mosh mvn osx sublime sudo tmux tmuxinator vagrant)
+plugins=(aws git brew brew-cask colorize cp docker docker-compose docker-machine fasd github gradle heroku mosh mvn osx sublime sudo tmux tmuxinator vagrant)
 
 # User configuration
 
@@ -81,11 +81,10 @@ export LANG=en_US.UTF-8
 # For a full list of active aliases, run `alias`.
 #
 # Example aliases
-# alias zshconfig="mate ~/.zshrc"
-# alias ohmyzsh="mate ~/.oh-my-zsh"
+alias zshconfig="st ~/.zshrc"
+alias ohmyzsh="st ~/.oh-my-zsh"
 
 source ~/.exports
-source ~/.eismo
 source ~/.aliases
 export RBENV_ROOT=/usr/local/var/rbenv
 if which rbenv > /dev/null; then eval "$(rbenv init -)"; fi
@@ -96,3 +95,5 @@ meteo(){
   VILLE=${1:-paris}
   curl -4 http://wttr.in/$VILLE
 }
+
+export PATH="/usr/local/bin:$PATH"
