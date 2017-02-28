@@ -1,5 +1,0 @@
-export JAVA_OPTS="-Deismo.conf.directory=/Users/OCTO-FMA/dev/EISMO/conf/eismo"
-export JAVA_OPTS="$JAVA_OPTS -Deismo.persistence.properties=persistence.properties"
-export JAVA_OPTS="$JAVA_OPTS -Dfeatures.conf.directory=/Users/OCTO-FMA/dev/EISMO/conf/eismo"
-
-export MAVEN_OPTS=$JAVA_OPTS

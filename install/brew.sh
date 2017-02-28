@@ -33,6 +33,7 @@ apps=(
     tmux
     reattach-to-user-namespace
     tree
+    python3
 )
 
 brew install "${apps[@]}"
