@@ -49,7 +49,7 @@ ZSH_THEME="robbyrussell"
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
-plugins=(aws git brew brew-cask colorize cp docker docker-compose docker-machine fasd github gradle heroku mosh mvn osx sublime sudo tmux tmuxinator vagrant)
+plugins=(aws git brew brew-cask colorize cp docker docker-compose docker-machine fasd github gradle heroku mosh mvn osx sublime sudo ssh-agent tmux tmuxinator vagrant virtualenv)
 
 # User configuration
 
@@ -97,3 +97,6 @@ meteo(){
 }
 
 export PATH="/usr/local/bin:$PATH"
+
+# added by Pew
+source $(pew shell_config)
