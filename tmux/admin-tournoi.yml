@@ -1,7 +1,7 @@
-# ~/.tmuxinator/payconiq-backendapi.yml
+# ~/.tmuxinator/admin-tournoi.yml
 
-name: eismo-writer
-root: ~/dev/EISMO/epg-subscriber-writer
+name: admin-tournoi
+root: ~/dev/PERSO/admin_tournoi_spring
 
 windows:
   - git:
@@ -10,8 +10,3 @@ windows:
         - while true; do clear; git --no-pager log -n 10 --oneline --decorate --graph; sleep 5; done
         - while true; do clear; git status -s; sleep 5; done
         - 
-  - run:
-      - 
-  - conf:
-      - cd ../conf/epg-subscriber-writer
-      - 

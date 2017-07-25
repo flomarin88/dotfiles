@@ -49,7 +49,7 @@ ZSH_THEME="robbyrussell"
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
-plugins=(aws git brew brew-cask colorize cp docker docker-compose docker-machine fasd github gradle heroku mosh mvn osx sublime sudo ssh-agent tmux tmuxinator vagrant virtualenv)
+plugins=(aws git brew brew-cask colorize cp docker docker-compose docker-machine fasd github gradle heroku mosh mvn osx pyenv sublime sudo ssh-agent tmux tmuxinator vagrant virtualenv)
 
 # User configuration
 
@@ -90,13 +90,12 @@ export RBENV_ROOT=/usr/local/var/rbenv
 if which rbenv > /dev/null; then eval "$(rbenv init -)"; fi
 
 eval "$(jenv init -)"
+eval "$(pyenv init -)"
+eval "$(pyenv virtualenv-init -)"
 
 meteo(){
   VILLE=${1:-paris}
   curl -4 http://wttr.in/$VILLE
 }
 
-export PATH="/usr/local/bin:$PATH"
-
-# added by Pew
-source $(pew shell_config)
+export PATH="/Users/fma/.ghf/bin:/usr/local/bin:$PATH"

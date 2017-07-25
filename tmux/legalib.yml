@@ -1,7 +1,7 @@
-# ~/.tmuxinator/payconiq-backendapi.yml
+# ~/.tmuxinator/legalib.yml
 
-name: eismo-reader
-root: ~/dev/EISMO/epg-subscriber-reader
+name: legalib
+root: ~/dev/MANAKIN/legalib
 
 windows:
   - git:
@@ -10,11 +10,3 @@ windows:
         - while true; do clear; git --no-pager log -n 10 --oneline --decorate --graph; sleep 5; done
         - while true; do clear; git status -s; sleep 5; done
         - 
-  - deploy:
-      - cd ../deployer
-      - 
-  - vagrant:
-      - cd ../deployer
-      - vagrant up
-      - vagrant ssh
-      - 

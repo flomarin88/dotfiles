@@ -1,7 +1,7 @@
-# ~/.tmuxinator/eismo.yml
+# ~/.tmuxinator/manabot.yml
 
-name: eismo
-root: ~/dev/EISMO/eismo
+name: manabot
+root: ~/dev/MANAKIN/manabot
 
 windows:
   - git:
@@ -10,11 +10,3 @@ windows:
         - while true; do clear; git --no-pager log -n 10 --oneline --decorate --graph; sleep 5; done
         - while true; do clear; git status -s; sleep 5; done
         - 
-  - conf:
-      - cd ../conf
-      - 
-  - mysql:
-      - cd ../vagrant-mysql-master
-      - vagrant up
-      - vagrant ssh
-      - 

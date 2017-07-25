@@ -1,7 +1,7 @@
-# ~/.tmuxinator/payconiq-backendapi.yml
+# ~/.tmuxinator/manakin-ansible.yml
 
-name: eismo-couchbase
-root: ~/dev/EISMO/couchbase-super-eismo
+name: manakin-ansible
+root: ~/dev/MANAKIN/manakin-ansible
 
 windows:
   - git:
