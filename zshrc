@@ -98,4 +98,7 @@ meteo(){
   curl -4 http://wttr.in/$VILLE
 }
 
-export PATH="/Users/fma/.ghf/bin:/usr/local/bin:$PATH"
+export PATH="/Users/fma/.local/bin:/Users/fma/.ghf/bin:/usr/local/bin:$PATH"
+
+# Add RVM to PATH for scripting. Make sure this is the last PATH variable change.
+export PATH="$PATH:$HOME/.rvm/bin"

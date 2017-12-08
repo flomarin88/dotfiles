@@ -5,4 +5,4 @@ ln -s ~/dotfiles/tmux.conf ~/.tmux.conf
 ln -s ~/dotfiles/tmux ~/.tmuxinator 
 
 git config --global user.name "Florian MARIN"
-git config --global user.email "florian.marin@cubber.com"
+git config --global user.email "flomarin88@gmail.com"

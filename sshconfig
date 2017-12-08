@@ -1,7 +1,4 @@
-IdentityFile ~/.ssh/id_rsa_octo
 IdentityFile ~/.ssh/id_rsa_github 
-IdentityFile ~/.ssh/aws-fma
-
 
 Host github
   Hostname github.com
