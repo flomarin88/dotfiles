@@ -86,19 +86,9 @@ alias ohmyzsh="st ~/.oh-my-zsh"
 
 source ~/.exports
 source ~/.aliases
-export RBENV_ROOT=/usr/local/var/rbenv
-if which rbenv > /dev/null; then eval "$(rbenv init -)"; fi
-
-eval "$(jenv init -)"
-eval "$(pyenv init -)"
-eval "$(pyenv virtualenv-init -)"
 
 meteo(){
   VILLE=${1:-paris}
   curl -4 http://wttr.in/$VILLE
 }
 
-export PATH="/Users/fma/.local/bin:/Users/fma/.ghf/bin:/usr/local/bin:$PATH"
-
-# Add RVM to PATH for scripting. Make sure this is the last PATH variable change.
-export PATH="$PATH:$HOME/.rvm/bin"

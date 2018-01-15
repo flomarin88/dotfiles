@@ -15,25 +15,15 @@ brew update
 brew upgrade
 
 apps=(
-    ansible
     coreutils
     dockutil
-    docker-machine
-    docker
-    docker-compose
     fasd
-    jenv
     git
-    Caskroom/cask/java
-    maven
     psgrep
-    rbenv
-    ruby-build
     ssh-copy-id
     tmux
     reattach-to-user-namespace
     tree
-    python3
 )
 
 brew install "${apps[@]}"
