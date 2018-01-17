@@ -1,0 +1,23 @@
+authtoken: YOUR_AUTH_TOKEN
+json_resolver_url: ""
+dns_resolver_ips: []
+tunnels:
+  dashboard:
+    addr: 4000
+    proto: http
+    subdomain: YOUR_NAME-dashboard
+
+  livecall:
+    addr: 3000
+    proto: http
+    subdomain: YOUR_NAME-livecall
+
+  local:
+    addr: 3002
+    proto: http
+    subdomain: YOUR_NAME-web
+
+  bridge:
+    addr: 3004
+    proto: http
+    subdomain: YOUR_NAME-bridge

@@ -11,6 +11,7 @@ apps=(
     istat-menus
     iterm2
     google-chrome
+    ngrok # Aircall
     rubymine
     slack
     sourcetree

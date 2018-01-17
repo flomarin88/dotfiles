@@ -1,7 +1,7 @@
-# ~/.tmuxinator/aircall-web.yml
+# ~/.tmuxinator/aircall-livecall.yml
 
-name: aircall-web
-root: ~/dev/aircall/aircall-web
+name: aircall-livecall
+root: ~/dev/aircall/aircall-livecall
 
 windows:
   - git:
