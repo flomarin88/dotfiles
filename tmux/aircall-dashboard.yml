@@ -10,3 +10,5 @@ windows:
         - while true; do clear; git --no-pager log -n 6 --oneline --decorate --graph; sleep 5; done
         - while true; do clear; git status -s; sleep 5; done
         - 
+  - front:
+      - NGROK_URL=http://localhost:3002 BRIDGE_URL=https://localhost:3004 make

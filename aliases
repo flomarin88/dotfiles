@@ -1,5 +1,4 @@
 alias mux="tmuxinator"
 alias gfix="git commit --fixup"
 alias greb="git rebase --autosquash -i"
-alias gdb="git branch --merged | egrep -v \"(^\*|master|dev|develop)\" | xargs git branch -d"
 alias speed="curl -o /dev/null http://speedtest.sea01.softlayer.com/downloads/test100.zip"

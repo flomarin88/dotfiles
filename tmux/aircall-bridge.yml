@@ -10,3 +10,7 @@ windows:
         - while true; do clear; git --no-pager log -n 6 --oneline --decorate --graph; sleep 5; done
         - while true; do clear; git status -s; sleep 5; done
         - 
+  - sidekiq:
+      - bundle exec sidekiq -C config/sidekiq.yml
+  - api:
+      - rails s -p 3004

@@ -32,3 +32,4 @@ brew install "${apps[@]}"
 ln -sf "$(brew --prefix)/share/git-core/contrib/diff-highlight/diff-highlight" /usr/local/bin/diff-highlight
 
 gem install tmuxinator
+gem install overcommit

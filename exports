@@ -1,6 +1,9 @@
 # Make vim the default editor
 export EDITOR="subl"
 
+# Git hooks for every repository
+export GIT_TEMPLATE_DIR="$(overcommit --template-dir)"
+
 # Larger bash history (allow 32³ entries; default is 500)
 export HISTSIZE=32768
 export HISTFILESIZE=$HISTSIZE
@@ -27,3 +30,4 @@ export HOMEBREW_CASK_OPTS="--appdir=/Applications"
 export PATH="/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin"
 # export MANPATH="/usr/local/man:$MANPATH"
 export FONTCONFIG_PATH=/opt/X11/lib/X11/fontconfig
+export PATH="$HOME/.jenv/bin:$PATH"
